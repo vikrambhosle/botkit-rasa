@@ -1,5 +1,5 @@
 {
-  "name": "botkit-rasa",
+  "name": "botkit-ras",
   "version": "1.0.0",
   "description": "",
   "main": "src/middleware.js",
