@@ -1,5 +1,5 @@
 const request = require('request-promise')
-const debug = require('debug')('botkit:rasa')
+const debug = require('debug')('botkit:ras')
 
 module.exports = config => {
   if (!config) {
@@ -20,7 +20,7 @@ module.exports = config => {
       debug('Sending message to Rasa', message.text)
       const options = {
         method: 'POST',
-        uri: `${config.rasa_uri}/parse`,
+        uri: `${config.rasa_uri}/parse -d`,
         body: {
           q: message.text
         },
